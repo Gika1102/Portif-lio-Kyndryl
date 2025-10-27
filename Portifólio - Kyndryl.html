@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Portfólio de Giovanna Felix ✨</title>
+
+    <!-- Fonte -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="Portfólio de Giovanna Felix — Data Analyst & Power Platform Developer. Confira meus projetos!"
+    />
+    <meta name="author" content="Giovanna Felix" />
+
+    <style>
+      :root {
+        --main-color: #ff462d;
+        --bg-light: #fffaf8;
+        --text-dark: #333;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: var(--main-color);
+        text-align: center;
+        padding: 3rem 1rem 2rem;
+        color: white;
+        position: relative;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+        margin-bottom: 1rem;
+      }
+
+      header h1 {
+        margin: 0.5rem 0;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav a {
+        color: var(--text-dark);
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: var(--main-color);
+      }
+
+      section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
+      }
+
+      section:hover {
+        transform: translateY(-3px);
+      }
+
+      h2 {
+        color: var(--main-color);
+        margin-top: 0;
+      }
+
+      #projetos ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+      }
+
+      #projetos li {
+        background: var(--bg-light);
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      #skills .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: center;
+      }
+
+      .skills-grid span {
+        background: var(--main-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: var(--text-dark);
+        background: white;
+      }
+
+      /* Botão de voltar ao topo */
+      #topBtn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: var(--main-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        display: none;
+        transition: background 0.3s ease;
+      }
+
+      #topBtn:hover {
+        background: #e03d27;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        nav a {
+          display: inline-block;
+          margin: 0.5rem;
+        }
+
+        section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQGpZIs2FR3yfQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718399855360?e=1762992000&v=beta&t=H3MHW4aeeuNe3HfEBwbd2LdnlLZO6GNjwv6IXLdPLbo" alt="Foto de Giovanna Felix">
+      <h1>✨ Giovanna Felix ✨</h1>
+      <p>Data Analyst • Power Platform Developer • Copilot 365 & Studio Developer</p>
+    </header>
+
+    <nav>
+
+      <a href="#sobre">Sobre mim</a>
+      <a href="#skills">Skills</a>
+      <a href="#Áreas de Desenvolvimento">Projetos</a>
+      <a href="#Projetos detalhes">Projetos Detalhados</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+      <h2>💫 Sobre mim</h2>
+      <p>
+        Sou apaixonada por dados, automações e cultura. Uso a tecnologia pra resolver problemas e trazer mais leveza pro dia a dia —
+        tipo um toque de magia no mundo corporativo ✨.
+      </p>
+      <p>
+        Hoje atuo desenvolvendo soluções na Power Platform, integrando dados e otimizando processos com o poder do Copilot e da
+        automação inteligente.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>🪄 Skills</h2>
+      <div class="skills-grid">
+        <span>Power BI</span>
+        <span>Power Automate</span>
+        <span>Power Apps</span>
+        <span>Copilot Studio</span>
+        <span>Data Visualization</span>
+        <span>SharePoint</span>
+        <span>GitHub</span>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>🚀 Projetos</h2>
+      <ul>
+        <li>📊 Dashboard Power BI — análise de vendas por país e performance comercial.</li>
+        <li>⚙️ Automação Power Automate — fluxo inteligente para processos corporativos.</li>
+        <li>💌 Power Apps — aplicativo interno para gestão de solicitações de projetos.</li>
+      </ul>
+    </section>
+
+    <button id="topBtn">⬆️</button>
+
+    <script>
+      const btn = document.getElementById("topBtn");
+      window.onscroll = () => {
+        btn.style.display = window.scrollY > 300 ? "block" : "none";
+      };
+      btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
+  </body>
+</html>
+
+<section id="Projetos detalhes"></section>
+<style>
+header {background-color:#ff462d;color:white;text-align:center;padding:2rem 1rem;}
+header h1{margin:0;font-size:2rem;}
+header p{margin-top:0.3rem;font-size:1.1rem;}
+nav{display:flex;justify-content:center;gap:1rem;background:white;padding:1rem;border-bottom:1px solid #f3f3f3;}
+nav a,nav button{text-decoration:none;color:#ff462d;font-weight:bold;border:none;background:none;cursor:pointer;padding:0.5rem 1rem;border-radius:8px;transition:0.2s;}
+nav a:hover,nav button:hover{background-color:#fff1ef;}
+section{max-width:1100px;margin:2rem auto;padding:1rem;}
+footer{text-align:center;padding:1rem;font-size:0.9rem;color:#444;border-top:1px solid #eee;margin-top:3rem;}
+</style>
+
+
+<section id="projects-section" style="max-width:1100px;margin:2rem auto;padding:1rem;">
+  <!-- Cabeçalho e botões principais -->
+  <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+    <div style="display:flex;gap:0.5rem;flex:1;min-width:260px;align-items:center;">
+      <input id="searchInput" placeholder="Pesquisar projetos, tech, role..." 
+             style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid #ddd" />
+      <select id="statusFilter" style="padding:0.55rem;border-radius:8px;border:1px solid #ddd">
+        <option value="all">Todos os status</option>
+        <option value="Concluído">Concluído</option>
+        <option value="Em andamento">Em andamento</option>
+        <option value="Proposto">Proposto</option>
+      </select>
+    </div>
+
+    <div style="display:flex;gap:0.5rem;flex-shrink:0;">
+      <button id="sortBtn" style="padding:0.55rem 0.9rem;border-radius:8px;border:1px solid #ddd;cursor:pointer">Ordenar por data ↓</button>
+      <button id="addBtn" style="background:#ff462d;color:#fff;padding:0.55rem 0.9rem;border-radius:8px;border:none;cursor:pointer">+ Novo</button>
+      <button id="exportBtn" title="Exportar CSV" style="padding:0.55rem 0.9rem;border-radius:8px;border:1px solid #ddd;cursor:pointer">Exportar CSV</button>
+      <button id="clearAllBtn" style="padding:0.55rem 0.9rem;border-radius:8px;border:1px solid #ddd;background:#ff462d;color:#fff;cursor:pointer">Apagar todos</button>
+      <button onclick="window.location.href='Portifólio - Kyndryl.html'" style="padding:0.55rem 0.9rem;border-radius:8px;border:1px solid #ddd;background:#fff;color:#ff462d;cursor:pointer">Voltar</button>
+    </div>
+  </div>
+
+  <!-- Tabela -->
+  <div style="margin-top:1rem;overflow:auto;border-radius:10px">
+    <table id="projectsTable" style="width:100%;border-collapse:collapse;min-width:800px">
+      <thead>
+        <tr style="background:#fff5f3;color:#ff462d;text-align:left">
+          <th style="padding:0.85rem;border-bottom:1px solid #eee">Projeto</th>
+          <th style="padding:0.85rem;border-bottom:1px solid #eee">Papel</th>
+          <th style="padding:0.85rem;border-bottom:1px solid #eee">Tech</th>
+          <th style="padding:0.85rem;border-bottom:1px solid #eee;white-space:nowrap">Data</th>
+          <th style="padding:0.85rem;border-bottom:1px solid #eee">Status</th>
+          <th style="padding:0.85rem;border-bottom:1px solid #eee;text-align:center">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="projectsBody">
+        <!-- Rows renderizados pelo JS -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Modal Detalhes -->
+<div id="detailModal" role="dialog" aria-modal="true" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);align-items:center;justify-content:center;padding:1rem;z-index:9999">
+  <div style="background:white;border-radius:12px;max-width:720px;width:100%;padding:1.25rem;box-shadow:0 8px 30px rgba(0,0,0,0.15);position:relative">
+    <button id="closeDetail" style="position:absolute;right:12px;top:12px;border:none;background:none;font-size:1.25rem;cursor:pointer">✖</button>
+    <h3 id="detailTitle" style="margin:0 0.5rem 0.5rem;color:#ff462d"></h3>
+    <p id="detailDesc" style="margin:0 0 0.75rem;color:#333"></p>
+    <ul id="detailMeta" style="padding-left:1.1rem;color:#444;margin-bottom:1rem"></ul>
+    <div id="detailLinks" style="display:flex;gap:0.5rem;flex-wrap:wrap"></div>
+  </div>
+</div>
+
+<!-- Modal Adicionar -->
+<div id="addModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);align-items:center;justify-content:center;padding:1rem;z-index:9999">
+  <form id="addForm" style="background:white;border-radius:12px;max-width:560px;width:100%;padding:1rem;box-shadow:0 8px 30px rgba(0,0,0,0.12)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+      <h3 style="margin:0;color:#ff462d">Adicionar Projeto</h3>
+      <button type="button" id="closeAdd" style="border:none;background:none;font-size:1.15rem;cursor:pointer">✖</button>
+    </div>
+    <label style="display:block;margin-bottom:0.45rem">
+      Título
+      <input name="title" required style="width:100%;padding:0.5rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem" />
+    </label>
+    <label style="display:block;margin-bottom:0.45rem">
+      Descrição curta
+      <textarea name="description" rows="3" style="width:100%;padding:0.5rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem"></textarea>
+    </label>
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.45rem">
+      <label style="flex:1;min-width:140px">
+        Papel
+        <input name="role" style="width:100%;padding:0.45rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem" />
+      </label>
+      <label style="flex:1;min-width:140px">
+        Tech / Tags (vírgula)
+        <input name="tech" placeholder="Power BI, Power Automate" style="width:100%;padding:0.45rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem" />
+      </label>
+    </div>
+    <div style="display:flex;gap:0.5rem;margin-bottom:0.45rem">
+      <label style="flex:1">
+        Data (YYYY-MM-DD)
+        <input name="date" type="date" style="width:100%;padding:0.45rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem" />
+      </label>
+      <label style="flex:1">
+        Status
+        <select name="status" style="width:100%;padding:0.45rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem">
+          <option>Concluído</option>
+          <option>Em andamento</option>
+          <option>Proposto</option>
+        </select>
+      </label>
+    </div>
+    <label style="display:block;margin-bottom:0.45rem">
+      Links (separar por vírgula)
+      <input name="links" style="width:100%;padding:0.45rem;border-radius:8px;border:1px solid #ddd;margin-top:0.25rem" />
+    </label>
+    <div style="display:flex;gap:0.5rem;justify-content:flex-end;margin-top:0.5rem">
+      <button type="button" id="cancelAdd" style="padding:0.5rem 0.8rem;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer">Cancelar</button>
+      <button type="submit" style="padding:0.55rem 0.9rem;border-radius:8px;border:none;background:#ff462d;color:#fff;cursor:pointer">Adicionar</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// ===== utils =====
+function cryptoRandomId(){ return Math.random().toString(36).slice(2,9); }
+function getStored(){ try{ return JSON.parse(localStorage.getItem('proj_table_v1')) || []; }catch(e){return [];} }
+function saveStored(arr){ localStorage.setItem('proj_table_v1', JSON.stringify(arr)); }
+
+let projects = getStored();
+let sortAsc = false;
+const tbody = document.getElementById('projectsBody');
+
+// ===== renderização =====
+function renderProjects(){
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const status = document.getElementById('statusFilter').value;
+  let list = projects.slice();
+  if(status !== 'all') list = list.filter(p => p.status === status);
+  if(q) list = list.filter(p => (p.title+p.role+(p.tech||[]).join(' ')+(p.description||'')).toLowerCase().includes(q));
+  list.sort((a,b)=>{
+    if(sortAsc) return (a.date||'').localeCompare(b.date||'');
+    return (b.date||'').localeCompare(a.date||'');
+  });
+
+  tbody.innerHTML = '';
+  if(list.length === 0){
+    tbody.innerHTML = `<tr><td colspan="6" style="padding:1rem;text-align:center;color:#666">Nenhum projeto encontrado.</td></tr>`;
+    return;
+  }
+
+  for(const p of list){
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="padding:0.8rem;border-bottom:1px solid #f1f1f1">
+        <div style="font-weight:600">${escapeHtml(p.title)}</div>
+        <div style="font-size:0.85rem;color:#666">${escapeHtml(p.description || '')}</div>
+      </td>
+      <td style="padding:0.8rem;border-bottom:1px solid #f1f1f1">${escapeHtml(p.role||'')}</td>
+      <td style="padding:0.8rem;border-bottom:1px solid #f1f1f1">${(p.tech||[]).map(t=>`<span style="background:#fff1ef;color:#ff462d;padding:0.2rem 0.5rem;border-radius:6px;font-size:0.82rem;margin-right:4px">${escapeHtml(t)}</span>`).join(' ')}</td>
+      <td style="padding:0.8rem;border-bottom:1px solid #f1f1f1;white-space:nowrap">${p.date||''}</td>
+      <td style="padding:0.8rem;border-bottom:1px solid #f1f1f1">${escapeHtml(p.status||'')}</td>
+      <td style="padding:0.8rem;border-bottom:1px solid #f1f1f1;text-align:center">
+        <button data-id="${p.id}" class="viewBtn" style="padding:0.4rem .6rem;border-radius:8px;border:1px solid #eee;background:#fff;cursor:pointer">Ver</button>
+        <button data-id="${p.id}" class="deleteBtn" style="padding:0.4rem .6rem;border-radius:8px;border:1px solid #eee;background:#ff462d;color:#fff;cursor:pointer;margin-left:4px">Apagar</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  // Handlers
+  document.querySelectorAll('.viewBtn').forEach(btn=>btn.onclick=()=>openDetail(btn.dataset.id));
+  document.querySelectorAll('.deleteBtn').forEach(btn=>{
+    btn.onclick = () => {
+      if(confirm("Quer mesmo apagar este projeto? 💀")){
+        projects = projects.filter(p=>p.id!==btn.dataset.id);
+        saveStored(projects);
+        renderProjects();
+      }
+    };
+  });
+}
+
+function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+// ===== Modal detalhes =====
+const detailModal = document.getElementById('detailModal');
+const detailTitle = document.getElementById('detailTitle');
+const detailDesc = document.getElementById('detailDesc');
+const detailMeta = document.getElementById('detailMeta');
+const detailLinks = document.getElementById('detailLinks');
+function openDetail(id){
+  const p = projects.find(x=>x.id===id); if(!p) return;
+  detailTitle.textContent = p.title;
+  detailDesc.textContent = p.description||'';
+  detailMeta.innerHTML = `
+    <li><strong>Papel:</strong> ${escapeHtml(p.role||'')}</li>
+    <li><strong>Data:</strong> ${p.date||'—'}</li>
+    <li><strong>Status:</strong> ${escapeHtml(p.status||'')}</li>
+    <li><strong>Tech:</strong> ${(p.tech||[]).map(t=>escapeHtml(t)).join(', ')}</li>
+  `;
+  detailLinks.innerHTML = '';
+  (p.links||[]).forEach(l=>{
+    const a = document.createElement('a');
+    a.href = l.url||'#';
+    a.target="_blank";
+    a.rel="noopener";
+    a.textContent = l.label||l.url;
+    a.style.cssText="display:inline-block;padding:0.4rem 0.6rem;border-radius:8px;border:1px solid #eee;background:#fff;margin-right:0.4rem;margin-top:0.3rem;text-decoration:none;color:#ff462d";
+    detailLinks.appendChild(a);
+  });
+  detailModal.style.display='flex';
+}
+document.getElementById('closeDetail').onclick=()=>detailModal.style.display='none';
+detailModal.onclick=e=>{if(e.target===detailModal)detailModal.style.display='none'};
+
+// ===== Modal adicionar =====
+const addModal=document.getElementById('addModal');
+const addBtn=document.getElementById('addBtn');
+const closeAdd=document.getElementById('closeAdd');
+const cancelAdd=document.getElementById('cancelAdd');
+const addForm=document.getElementById('addForm');
+addBtn.onclick=()=>addModal.style.display='flex';
+closeAdd.onclick=cancelAdd.onclick=()=>addModal.style.display='none';
+addModal.onclick=e=>{if(e.target===addModal)addModal.style.display='none';}
+addForm.onsubmit=function(e){
+  e.preventDefault();
+  const fd=new FormData(addForm);
+  const newP={
+    id: cryptoRandomId(),
+    title: fd.get('title')||'Untitled',
+    description: fd.get('description')||'',
+    role: fd.get('role')||'',
+    tech:(fd.get('tech')||'').split(',').map(s=>s.trim()).filter(Boolean),
+    date: fd.get('date')||'',
+    status: fd.get('status')||'Proposto',
+    links:(fd.get('links')||'').split(',').map(u=>u.trim()).filter(Boolean).map(u=>({label:u,url:u}))
+  };
+  projects.unshift(newP);
+  saveStored(projects);
+  renderProjects();
+  addForm.reset();
+  addModal.style.display='none';
+}
+
+// ===== Buscas, filtros, sort, export =====
+document.getElementById('searchInput').addEventListener('input',debounce(()=>renderProjects(),180));
+document.getElementById('statusFilter').addEventListener('change',()=>renderProjects());
+document.getElementById('sortBtn').onclick=function(){sortAsc=!sortAsc;this.textContent=`Ordenar por data ${sortAsc?'↑':'↓'}`;renderProjects();}
+document.getElementById('exportBtn').onclick=function(){
+  const rows=projects.map(p=>({title:p.title,description:p.description,role:p.role,tech:(p.tech||[]).join(';'),date:p.date,status:p.status,links:(p.links||[]).map(l=>l.url).join(';')}));
+  const csv=toCSV(rows);
+  const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download=`projetos_${(new Date()).toISOString().slice(0,10)}.csv`;a.click();URL.revokeObjectURL(url);
+}
+
+// Botão apagar todos
+document.getElementById('clearAllBtn').onclick=()=>{
+  if(confirm("Quer mesmo apagar todos os projetos? 💀")){
+    projects=[];saveStored(projects);renderProjects();
+  }
+}
+
+// ===== helpers =====
+function toCSV(arr){
+  if(!arr.length)return'';
+  const keys=Object.keys(arr[0]);
+  const lines=[keys.join(',')];
+  for(const r of arr) lines.push(keys.map(k=>`"${String(r[k]||'').replace(/"/g,'""')}"`).join(','));
+  return lines.join('\n');
+}
+function debounce(fn,t){let timer;return function(...a){clearTimeout(timer);timer=setTimeout(()=>fn.apply(this,a),t);};}
+
+// ===== init =====
+renderProjects();
+saveStored(projects);
+</script>
+ </section>
+
+    <section id="contato">
+      <h2>📫 Contato</h2>
+      <p>
+        Quer trocar uma ideia ou colaborar? Manda um oi no e-mail:
+        <a href="mailto:dihsantos2502@gmail.com">dihsantos2502@gmail.com</a>
+      </p>
+    </section>
+
+ <footer>
+      <p>Feito com 💖 e um toque de sorte — Giovanna Felix © 2025</p>
+    </footer>
