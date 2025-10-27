@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Portfólio de Giovanna Felix ✨</title>
+
+    <!-- Fonte -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="Portfólio de Giovanna Felix — Data Analyst & Power Platform Developer. Confira meus projetos!"
+    />
+    <meta name="author" content="Giovanna Felix" />
+
+    <style>
+      :root {
+        --main-color: #ff462d;
+        --bg-light: #fffaf8;
+        --text-dark: #333;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: var(--main-color);
+        text-align: center;
+        padding: 3rem 1rem 2rem;
+        color: white;
+        position: relative;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+        margin-bottom: 1rem;
+      }
+
+      header h1 {
+        margin: 0.5rem 0;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav a {
+        color: var(--text-dark);
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: var(--main-color);
+      }
+
+      section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
+      }
+
+      section:hover {
+        transform: translateY(-3px);
+      }
+
+      h2 {
+        color: var(--main-color);
+        margin-top: 0;
+      }
+
+      #projetos ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+      }
+
+      #projetos li {
+        background: var(--bg-light);
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      #skills .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: center;
+      }
+
+      .skills-grid span {
+        background: var(--main-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: var(--text-dark);
+        background: white;
+      }
+
+      /* Botão de voltar ao topo */
+      #topBtn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: var(--main-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        display: none;
+        transition: background 0.3s ease;
+      }
+
+      #topBtn:hover {
+        background: #e03d27;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        nav a {
+          display: inline-block;
+          margin: 0.5rem;
+        }
+
+        section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="https://lh3.googleusercontent.com/rd-gg-dl/ABS2GSmm5otekHJBDJbqfRci_SHltL3oo6WkzuySDQpGwRd3PA-cc_ahFI5iySKHNCsUWyj5ZLzJJF3D-7pAUd3fEBDzYx2RKbFa_cXUwnszCY2nKSj0pdsV5715AlobEe6oKUg8CeuOJBxto_zfaGR4m-Mx2CQ_MTUOmuE0fi9a0NkKbOzgNsK9xOc66arwT-ssV_T0GNu8jxdhQ6dEPHNh4DIApBTi5ngcjigSTdUZWCSZkMW576vsIheRvl_fHUuZs3g0542DqUT_50osxUFj8Tq0VTAGxKYANcoBgmx-OQ4vmDYzW9Y8Eln_bSkz8WCENc9gqVHfWLVAz8SHm64v3CQVf8H7LeaIEZs4QSsiyLgHwwCvlinrcNhYnf9W1_ntyEefZSzOaJ5XuEP6t89mX1sjumIM9CszIdBD-CDH1xywhmVz7FEItr1SG6HJb_GoGYyG_tuh7-pv3o4Wx0KGuvITfakQpyvSxUuB014nvjsqqb2SX2Km0P0F8noflghfL270rfPsTIj8R_66xQC4ZujKV_40cAaSROBGh1EYAmxM6YTkYNcThtiQOuIUGclI4Z1pP4uRaOTvjSeEyOIBCEr8SbtfL-RZbPFuqTG-1mDb3alRBL7e45tIcCwvnWEBgHJLrJogFtQw_n6pgsQK2BjsvacdSuZAMInIrIIphZ2xlIwORoQ8L_cUN1Kae2km2xHLTz5jpjO5Do-n7Ok2_-wmfd5xjFLySvPKhTOKwHlMezVrOQHwIt1h51YDpjpGv-_wgGkQPNF1_tzgQVGehFGjtDkJL20ox_Kd7I5swUNdxpjSTaYA_chxmUt9w8WD3pj1M-bq2v4KaWyhXwuMSO8n2n-8PlI9KnNlmUrpPUYsN1ymGbfuN03tfmROZIP7moBSv4KU4_mLcPXHNQlEuOrWskplX4oVXriJ6-omYeq8PTUGNFoGn6VyBPuTy95l5vCyQW7Mf9VV-RP-xsy6IU18LEY6Q5ndeUCIldNJw973tYt-sIbVEAZdD1d4FdvDGLKKRn2HdOXQr6-ONtIlhxaIhn9CorjXLAA2CqQpoC1uH6gO4023hhioxSTdyeBDysU4-WKiMs5U-rTtxpIbN5sTDEeQpWqzKgwchjUCr9hTfGGGZmtM7R_Xp38cVCIYA_Lzu92pgiWCPY3V-SgGGUBwFFbBXwXTuA=s1024-rj" alt="Foto de Giovanna Felix">
+      <h1>✨ Giovanna Felix ✨</h1>
+      <p>Data Analyst • Power Platform Developer • Copilot 365 & Studio Developer</p>
+    </header>
+
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+      <h2>💫 Sobre mim</h2>
+      <p>
+        Sou apaixonada por dados, automações e cultura. Uso a tecnologia pra resolver problemas e trazer mais leveza pro dia a dia —
+        tipo um toque de magia no mundo corporativo ✨.
+      </p>
+      <p>
+        Hoje atuo desenvolvendo soluções na Power Platform, integrando dados e otimizando processos com o poder do Copilot e da
+        automação inteligente.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>🪄 Skills</h2>
+      <div class="skills-grid">
+        <span>Power BI</span>
+        <span>Power Automate</span>
+        <span>Power Apps</span>
+        <span>Copilot Studio</span>
+        <span>Data Visualization</span>
+        <span>SharePoint</span>
+        <span>GitHub</span>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>🚀 Projetos</h2>
+      <ul>
+        <li>📊 Dashboard Power BI — análise de vendas por país e performance comercial.</li>
+        <li>⚙️ Automação Power Automate — fluxo inteligente para processos corporativos.</li>
+        <li>💌 Power Apps — aplicativo interno para gestão de solicitações de projetos.</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>📫 Contato</h2>
+      <p>
+        Quer trocar uma ideia ou colaborar? Manda um oi no e-mail:
+        <a href="mailto:dihsantos2502@gmail.com">dihsantos2502@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>Feito com 💖 e um toque de sorte — Giovanna Felix © 2025</p>
+    </footer>
+
+    <button id="topBtn">⬆️</button>
+
+    <script>
+      const btn = document.getElementById("topBtn");
+      window.onscroll = () => {
+        btn.style.display = window.scrollY > 300 ? "block" : "none";
+      };
+      btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
+  </body>
+</html>
